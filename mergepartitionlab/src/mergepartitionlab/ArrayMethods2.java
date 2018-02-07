@@ -63,6 +63,16 @@ public class ArrayMethods2 {
 			}
 		}
 		
+		if (list[0] < j)
+		{
+			partition(list);
+		}
+		
+		if (list[list.length - 1] > i)
+		{
+			partition(list);
+		}
+		
 	}
 	
 }
