@@ -7,15 +7,29 @@
 
 package mergepartitionlab;
 
+import java.util.Arrays;
+
 public class ArrayMethods2 {
 	
 	public static void main(String[] args)
 	{
 		// testing arrays
 		
-		String[] list1 = new String[] {"boo", "zebra", "foo", "carrot"};
-		String[] list2 = new String[] {"rabbit", "car", "monkey", "fly"};
-		int[] list = new int[] {4, 7, 1, 1, 9, 2, 5};
+		String[] test1 = new String[] {"boo", "zebra", "foo", "carrot"};
+		String[] test2 = new String[] {"rabbit", "car", "monkey", "fly"};
+		int[] test3 = new int[] {4, 7, 1, 1, 9, 2, 5};
+		
+		// Merge Test 
+		
+		long start = System.nanoTime();
+		String[] mergeResult = merge(test1, test2);
+		long end = System.nanoTime();
+		long time = end - start;
+		System.out.println("Merge test took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(mergeResult)); //Should print the array with all words in alpha order
+		
+		//Partition Test 
+		start =
 		
 	}
 	
