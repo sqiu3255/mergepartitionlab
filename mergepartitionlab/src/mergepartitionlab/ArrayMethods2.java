@@ -15,9 +15,9 @@ public class ArrayMethods2 {
 	{
 		// testing arrays
 		
-		String[] test1 = new String[] {"boo", "zebra", "foo", "carrot"};
-		String[] test2 = new String[] {"rabbit", "car", "monkey", "fly"};
-		int[] test3 = new int[] {4, 7, 1, 1, 9, 2, 5};
+		String[] test1 = new String[] {"apple", "cucumber", "microsoft", "zorro"};
+		String[] test2 = new String[] {"banana", "cherry", "mahogany", "oreos", "pinata"};
+		int[] test3 = new int[] {3, 4, 2, 7, 12, 22, 0, 1};
 		
 		// Merge Test 
 		
@@ -29,7 +29,13 @@ public class ArrayMethods2 {
 		System.out.println(Arrays.toString(mergeResult)); //Should print the array with all words in alpha order
 		
 		//Partition Test 
-		start =
+		start = System.nanoTime();
+		int pivotFinalPos = partition(test3);
+		end = System.nanoTime();
+		time = end - start;
+		System.out.println("Partition test took: " + time + "nanoseconds");
+		System.out.println("Final Pivot Position: " + pivotFinalPos);  //Should print 3
+		System.out.println(Arrays.toString(test3)); //Should have all elements partitioned around the pivot
 		
 	}
 	
@@ -47,7 +53,11 @@ public class ArrayMethods2 {
 	
 	public static String[] merge(String[] list1, String[] list2)
 	{
+		String[] finalList = new String[list1.length + list2.length];
 		
+		while(leftIndex)
+		
+		return finalList;
 	}
 	
 	
@@ -86,6 +96,8 @@ public class ArrayMethods2 {
 		{
 			partition(list);
 		}
+		
+		return 0;
 		
 	}
 	
